@@ -1,0 +1,17 @@
+fedf24badca7eb3eb234977bd6671678 *DESCRIPTION
+3f22898a6a17705d718227fd034e0afc *NAMESPACE
+874fc35789cb8bf633df4246105c38d4 *R/cbarplot.R
+97113af847e2bd920380204eeafb2d41 *R/cdensity.R
+120ca7019cf5aed9c813987897206e91 *R/cdotplot.R
+13fb3439728af00a851d6ceb414c7d16 *R/chist.R
+79966903e9eaff29381206e50e012d39 *R/cmdensity.R
+8db254367e7efb38c06ac502ff4b2def *R/cmhist.R
+ebb00e94349027f043349a371b198837 *R/utils.R
+fadfee4e52839b4df5b7fabbe5e15f03 *man/cbarplot.Rd
+7b94aebac56d5f1c07cd49992c90a425 *man/cdensity.Rd
+f4fd29a66ba8e67896df90f8fbbd77a0 *man/cdotplot.Rd
+25161cce9c28f9053d29a210d72eb7da *man/chist.Rd
+820ac51704014fa90640d00726242556 *man/circtrans.Rd
+ad1b6c9874c1b170eb60747f45358af5 *man/cmdensity.Rd
+d440f41b2ac53b1fc5cd1a58cecdeb67 *man/cmhist.Rd
+2afbb000d031cf5f0684dbe71691b04c *man/scalefactor.Rd
