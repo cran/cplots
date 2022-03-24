@@ -4,10 +4,21 @@
 \alias{chist}
 \title{Circular Histogram and Rose Diagram}
 \usage{
-chist(x, nbins = 36, radius = 1/sqrt(base::pi), area.prop = TRUE,
-  prob = TRUE, total.area = 1, nlabels = 4, col = "lightblue",
-  border = "skyblue4", m = NA, xlim = NULL, ylim = NULL,
-  main = NULL)
+chist(
+  x,
+  nbins = 36,
+  radius = 1/sqrt(base::pi),
+  area.prop = TRUE,
+  prob = TRUE,
+  total.area = 1,
+  nlabels = 4,
+  col = "lightblue",
+  border = "skyblue4",
+  m = NA,
+  xlim = NULL,
+  ylim = NULL,
+  main = NULL
+)
 }
 \arguments{
 \item{x}{a numeric vector storing angular values between 0 and 2 pi, or
@@ -52,6 +63,9 @@ ranges.}
 
 \item{main}{the main title (on top)}
 }
+\value{
+No return value
+}
 \description{
 Function \code{chist} can be used to plot 2-dimensional 
   histograms and rose diagrams for circular data.
@@ -74,8 +88,9 @@ chist(x, area=FALSE, total=NULL)   # without scaling
 
 }
 \references{
-Xu, D. and Wang, Y. (2019) Area-proportional Visualization for 
-  Circular Data (submitted).
+Xu, D. and Wang, Y. (2020). Area-proportional Visualization for
+Circular Data. \emph{Journal of Computational and Graphical
+Statistics}, \bold{29}, 351-357.
 }
 \seealso{
 \code{\link{cbarplot}}, \code{\link{cdensity}}, \code{\link{cdotplot}}
@@ -83,7 +98,5 @@ Xu, D. and Wang, Y. (2019) Area-proportional Visualization for
 \author{
 Danli Xu <dxu452@aucklanduni.ac.nz>, Yong Wang <yongwang@auckland.ac.nz>
 }
-\keyword{circular}
-\keyword{diagram}
-\keyword{histogram,}
-\keyword{rose}
+\concept{circular histogram}
+\concept{rose diagram}

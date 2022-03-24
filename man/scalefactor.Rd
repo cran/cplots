@@ -18,6 +18,9 @@ a histogram.}
 transformation is applied; if \code{FALSE}, a height-proportional
 transformationis applied.}
 }
+\value{
+A numerical value for the scaling factor
+}
 \description{
 The function calculates the scaling factor so that after scaling 
   the original density curve (before transformation), the total area after 
@@ -43,8 +46,9 @@ scalefactor(x, area.prop = FALSE, total.area = 2)
 
 }
 \references{
-Xu, D. and Wang, Y. (2019) Area-proportional Visualization for 
-Circular Data (submitted).
+Xu, D. and Wang, Y. (2020). Area-proportional Visualization for
+Circular Data. \emph{Journal of Computational and Graphical
+Statistics}, \bold{29}, 351-357.
 }
 \seealso{
 \code{\link{circtrans}}
@@ -52,4 +56,4 @@ Circular Data (submitted).
 \author{
 Danli Xu <dxu452@aucklanduni.ac.nz>, Yong Wang <yongwang@auckland.ac.nz>
 }
-\keyword{scale}
+\concept{scale}

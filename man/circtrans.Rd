@@ -19,6 +19,9 @@ transformationis applied.}
 \item{factor}{a positive number representing the scale factor to scale the
 entire plot.}
 }
+\value{
+A numerical vector of the transformed values
+}
 \description{
 The function performs circular transformation of density 
   or frequency, in an area-proportional or height-proportional manner.
@@ -32,8 +35,9 @@ circtrans(x, factor = 2)                # with a scaling factor
 
 }
 \references{
-Xu, D. and Wang, Y. (2019) Area-proportional Visualization for 
-Circular Data (submitted).
+Xu, D. and Wang, Y. (2020) Area-proportional Visualization for
+Circular Data. \emph{Journal of Computational and Graphical
+Statistics}, \bold{29}, 351-357.
 }
 \seealso{
 \code{\link{scalefactor}}
@@ -41,5 +45,4 @@ Circular Data (submitted).
 \author{
 Danli Xu <dxu452@aucklanduni.ac.nz>, Yong Wang <yongwang@auckland.ac.nz>
 }
-\keyword{circular}
-\keyword{transformation}
+\concept{circular transformation}

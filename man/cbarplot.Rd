@@ -4,9 +4,19 @@
 \alias{cbarplot}
 \title{Circular Bar Plot}
 \usage{
-cbarplot(x, nbins = 36, radius = 1/sqrt(base::pi), prob = TRUE,
-  nlabels = 4, col = NULL, border = NULL, m = NA, xlim = NULL,
-  ylim = NULL, main = NULL)
+cbarplot(
+  x,
+  nbins = 36,
+  radius = 1/sqrt(base::pi),
+  prob = TRUE,
+  nlabels = 4,
+  col = NULL,
+  border = NULL,
+  m = NA,
+  xlim = NULL,
+  ylim = NULL,
+  main = NULL
+)
 }
 \arguments{
 \item{x}{a numeric vector storing angular values between 0 and 2 pi, or
@@ -39,6 +49,9 @@ ranges.}
 
 \item{main}{the main title (on top)}
 }
+\value{
+No return value
+}
 \description{
 Function \code{cbarplot} can be used to plot 2-dimensional 
   circular bar plots. The circular bar plots can only adopt the 
@@ -56,8 +69,9 @@ cbarplot(x, radius=1, col="lightblue", border="skyblue4")
 
 }
 \references{
-Xu, D. and Wang, Y. (2019) Area-proportional Visualization for 
-  Circular Data (submitted).
+Xu, D. and Wang, Y. (2020). Area-proportional Visualization for
+Circular Data. \emph{Journal of Computational and Graphical
+Statistics}, \bold{29}, 351-357.
 }
 \seealso{
 \code{\link{cdensity}}, \code{\link{cdotplot}}, \code{\link{chist}}
@@ -65,6 +79,4 @@ Xu, D. and Wang, Y. (2019) Area-proportional Visualization for
 \author{
 Danli Xu <dxu452@aucklanduni.ac.nz>, Yong Wang <yongwang@auckland.ac.nz>
 }
-\keyword{bar}
-\keyword{circular}
-\keyword{plot}
+\concept{circular bar plot}

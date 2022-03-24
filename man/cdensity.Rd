@@ -4,9 +4,19 @@
 \alias{cdensity}
 \title{Circular Density Curve}
 \usage{
-cdensity(f, radius = 1/sqrt(base::pi), area.prop = TRUE,
-  total.area = 1, nlabels = 4, add = FALSE, n = 500, col = "red",
-  xlim = NULL, ylim = NULL, main = NULL)
+cdensity(
+  f,
+  radius = 1/sqrt(base::pi),
+  area.prop = TRUE,
+  total.area = 1,
+  nlabels = 4,
+  add = FALSE,
+  n = 500,
+  col = "red",
+  xlim = NULL,
+  ylim = NULL,
+  main = NULL
+)
 }
 \arguments{
 \item{f}{an R function that is to be plotted as a circular density or
@@ -18,7 +28,7 @@ with zero density.}
 
 \item{area.prop}{logical; if \code{TRUE}, an area-proportional
 transformation is applied; if \code{FALSE}, a height-proportional
-transformationis applied.}
+transformation is applied.}
 
 \item{total.area}{a positive number specifying the total area under the
 density curve. If \code{total.area = NULL}, no scaling is applied, the
@@ -43,6 +53,9 @@ ranges.}
 ranges.}
 
 \item{main}{the main title (on top)}
+}
+\value{
+No return value
 }
 \description{
 Function \code{cdensity} can be used to plot 2-dimensional 
@@ -70,8 +83,9 @@ cdensity(f, radius=0, area=FALSE, add=TRUE)
 
 }
 \references{
-Xu, D. and Wang, Y. (2019) Area-proportional Visualization for 
-  Circular Data (submitted).
+Xu, D. and Wang, Y. (2020). Area-proportional Visualization for
+Circular Data. \emph{Journal of Computational and Graphical
+Statistics}, \bold{29}, 351-357.
 }
 \seealso{
 \code{\link{cbarplot}}, \code{\link{cdotplot}}, \code{\link{chist}}
@@ -79,6 +93,4 @@ Xu, D. and Wang, Y. (2019) Area-proportional Visualization for
 \author{
 Danli Xu <dxu452@aucklanduni.ac.nz>, Yong Wang <yongwang@auckland.ac.nz>
 }
-\keyword{circular}
-\keyword{curve}
-\keyword{density}
+\concept{circular density curve}

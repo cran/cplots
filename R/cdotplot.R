@@ -31,20 +31,27 @@
 #' @param x.legend x coordinate to plot the legend.
 #' @param y.legend y coordinate to plot the legend.
 #' 
-#' @details If the number of observations is relatively small, 
-#' the usual circular stacked dot plot can be used with \code{unit = 1}.
-#' If the dataset is large, the dots may become too dense to visualize or count.
-#' Setting \code{unit} to be any positive integer to allow each dot to represent more than one observation.
-#' If the number of observations in one bin is not a multiple of the specified unit, 
-#' a partial dot can be used to represent the remainder at the top of the bin.
+#' @details If the number of observations is relatively small, the
+#'   usual circular stacked dot plot can be used with \code{unit = 1}.
+#'   If the dataset is large, the dots may become too dense to
+#'   visualize or count.  Setting \code{unit} to be any positive
+#'   integer to allow each dot to represent more than one observation.
+#'   If the number of observations in one bin is not a multiple of the
+#'   specified unit, a partial dot can be used to represent the
+#'   remainder at the top of the bin.
 #' 
-#' @keywords circular stacked dot plot
+#' @concept circular stacked dot plot
+#' 
+#' @return No return value
 #' 
 #' @author Danli Xu <dxu452@aucklanduni.ac.nz>, Yong Wang <yongwang@auckland.ac.nz>
 #' 
-#' @references Xu, D. and Wang, Y. (2019) Area-proportional Visualization for 
-#' Circular Data (submitted).
-#' 
+#' @references
+#'
+#' Xu, D. and Wang, Y. (2020). Area-proportional Visualization for
+#' Circular Data. \emph{Journal of Computational and Graphical
+#' Statistics}, \bold{29}, 351-357.
+
 #' @seealso \code{\link{cbarplot}}, \code{\link{cdensity}}, \code{\link{chist}}
 #' 
 #' @importFrom graphics hist plot points text polygon title

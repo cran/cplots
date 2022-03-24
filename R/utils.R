@@ -14,12 +14,17 @@
 #' @param factor a positive number representing the scale factor to scale the
 #'   entire plot.
 #' 
-#' @keywords circular transformation
+#' @concept circular transformation
+#' 
+#' @return A numerical vector of the transformed values
 #' 
 #' @author Danli Xu <dxu452@aucklanduni.ac.nz>, Yong Wang <yongwang@auckland.ac.nz>
 #' 
-#' @references Xu, D. and Wang, Y. (2019) Area-proportional Visualization for 
-#' Circular Data (submitted).
+#' @references
+#'
+#' Xu, D. and Wang, Y. (2020) Area-proportional Visualization for
+#' Circular Data. \emph{Journal of Computational and Graphical
+#' Statistics}, \bold{29}, 351-357.
 #' 
 #' @seealso \code{\link{scalefactor}}
 #' 
@@ -61,12 +66,17 @@ circtrans = function(x, radius=0, area.prop=TRUE, factor=1) {
 #'   transformation is applied; if \code{FALSE}, a height-proportional
 #'   transformationis applied.
 #' 
-#' @keywords scale
+#' @concept scale
+#' 
+#' @return A numerical value for the scaling factor
 #' 
 #' @author Danli Xu <dxu452@aucklanduni.ac.nz>, Yong Wang <yongwang@auckland.ac.nz>
 #' 
-#' @references Xu, D. and Wang, Y. (2019) Area-proportional Visualization for 
-#' Circular Data (submitted).
+#' @references
+#'
+#' Xu, D. and Wang, Y. (2020). Area-proportional Visualization for
+#' Circular Data. \emph{Journal of Computational and Graphical
+#' Statistics}, \bold{29}, 351-357.
 #' 
 #' @seealso \code{\link{circtrans}}
 #' 

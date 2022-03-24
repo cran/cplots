@@ -4,11 +4,26 @@
 \alias{cmhist}
 \title{Multi-class Stacked Circular Histogram and Rose Diagram}
 \usage{
-cmhist(value, class, nbins = 36, radius = 1/sqrt(base::pi),
-  area.prop = TRUE, prob = TRUE, proportion = FALSE,
-  total.area = 1, nlabels = 4, cols = NULL, borders = NULL,
-  m = NA, xlim = NULL, ylim = NULL, main = NULL, type = c("null",
-  "compass", "clock"), x.legend = "bottomright", y.legend = NULL)
+cmhist(
+  value,
+  class,
+  nbins = 36,
+  radius = 1/sqrt(base::pi),
+  area.prop = TRUE,
+  prob = TRUE,
+  proportion = FALSE,
+  total.area = 1,
+  nlabels = 4,
+  cols = NULL,
+  borders = NULL,
+  m = NA,
+  xlim = NULL,
+  ylim = NULL,
+  main = NULL,
+  type = c("null", "compass", "clock"),
+  x.legend = "bottomright",
+  y.legend = NULL
+)
 }
 \arguments{
 \item{value}{a numeric vector storing angular values between 0 and 2 pi,
@@ -75,6 +90,9 @@ labels for 24 hours are printed inside the reference circle.}
 
 \item{y.legend}{y coordinate to plot the legend.}
 }
+\value{
+No return value
+}
 \description{
 Function \code{cmhist} can be used to plot 2-dimensional 
   histograms and rose diagrams for circular data with multiple classes. 
@@ -93,8 +111,9 @@ cmhist(x, y, area=FALSE) # height-proportional
 
 }
 \references{
-Xu, D. and Wang, Y. (2019) Area-proportional Visualization for 
-  Circular Data (submitted).
+Xu, D. and Wang, Y. (2020). Area-proportional Visualization for
+Circular Data. \emph{Journal of Computational and Graphical
+Statistics}, \bold{29}, 351-357.
 }
 \seealso{
 \code{\link{chist}}, \code{\link{cmdensity}}
@@ -102,7 +121,4 @@ Xu, D. and Wang, Y. (2019) Area-proportional Visualization for
 \author{
 Danli Xu <dxu452@aucklanduni.ac.nz>, Yong Wang <yongwang@auckland.ac.nz>
 }
-\keyword{circular}
-\keyword{histogram}
-\keyword{multi-class}
-\keyword{stacked}
+\concept{multi-class stacked circular histogram}

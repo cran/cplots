@@ -33,12 +33,18 @@
 #'   ranges.
 #' @param main the main title (on top)
 #' 
-#' @keywords circular histogram, rose diagram
+#' @concept circular histogram
+#' @concept rose diagram
+#' 
+#' @return No return value
 #' 
 #' @author Danli Xu <dxu452@aucklanduni.ac.nz>, Yong Wang <yongwang@auckland.ac.nz>
 #' 
-#' @references Xu, D. and Wang, Y. (2019) Area-proportional Visualization for 
-#'   Circular Data (submitted).
+#' @references
+#'
+#' Xu, D. and Wang, Y. (2020). Area-proportional Visualization for
+#' Circular Data. \emph{Journal of Computational and Graphical
+#' Statistics}, \bold{29}, 351-357.
 #' 
 #' @seealso \code{\link{cbarplot}}, \code{\link{cdensity}}, \code{\link{cdotplot}}
 #' 

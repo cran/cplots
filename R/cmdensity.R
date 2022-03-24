@@ -49,12 +49,17 @@
 #' @param lty line width
 #' @param lwd line width
 #' 
-#' @keywords stacked circular density curve
+#' @concept stacked circular density curve
+#' 
+#' @return No return value
 #' 
 #' @author Danli Xu <dxu452@aucklanduni.ac.nz>, Yong Wang <yongwang@auckland.ac.nz>
 #' 
-#' @references Xu, D. and Wang, Y. (2019) Area-proportional Visualization for 
-#'   Circular Data (submitted).
+#' @references
+#'
+#' Xu, D. and Wang, Y. (2020). Area-proportional Visualization for
+#' Circular Data. \emph{Journal of Computational and Graphical
+#' Statistics}, \bold{29}, 351-357.
 #' 
 #' @seealso \code{\link{cdensity}}, \code{\link{cmhist}}
 #' 

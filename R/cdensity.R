@@ -10,7 +10,7 @@
 #'   with zero density.
 #' @param area.prop logical; if \code{TRUE}, an area-proportional
 #'   transformation is applied; if \code{FALSE}, a height-proportional
-#'   transformationis applied.
+#'   transformation is applied.
 #' @param total.area a positive number specifying the total area under the
 #'   density curve. If \code{total.area = NULL}, no scaling is applied, the
 #'   plot is in the original scale. If \code{area.prop = TRUE}, the total area 
@@ -28,12 +28,17 @@
 #'   ranges.
 #' @param main the main title (on top)
 #' 
-#' @keywords circular density curve
+#' @concept circular density curve
+#' 
+#' @return No return value
 #' 
 #' @author Danli Xu <dxu452@aucklanduni.ac.nz>, Yong Wang <yongwang@auckland.ac.nz>
 #' 
-#' @references Xu, D. and Wang, Y. (2019) Area-proportional Visualization for 
-#'   Circular Data (submitted).
+#' @references
+#'
+#' Xu, D. and Wang, Y. (2020). Area-proportional Visualization for
+#' Circular Data. \emph{Journal of Computational and Graphical
+#' Statistics}, \bold{29}, 351-357.
 #' 
 #' @seealso \code{\link{cbarplot}}, \code{\link{cdotplot}}, \code{\link{chist}}
 #' 

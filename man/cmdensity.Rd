@@ -4,12 +4,27 @@
 \alias{cmdensity}
 \title{Multi-class Circular Density Curve}
 \usage{
-cmdensity(funlist, funprop = 1, radius = 1/sqrt(base::pi),
-  area.prop = TRUE, total.area = 1, n = 500, nlabels = 4,
-  cols = NULL, borders = NULL, xlim = NULL, ylim = NULL,
-  main = NULL, type = c("null", "compass", "clock"), add = FALSE,
-  x.legend = "bottomright", y.legend = NULL, fill = TRUE, lty = 1,
-  lwd = 1)
+cmdensity(
+  funlist,
+  funprop = 1,
+  radius = 1/sqrt(base::pi),
+  area.prop = TRUE,
+  total.area = 1,
+  n = 500,
+  nlabels = 4,
+  cols = NULL,
+  borders = NULL,
+  xlim = NULL,
+  ylim = NULL,
+  main = NULL,
+  type = c("null", "compass", "clock"),
+  add = FALSE,
+  x.legend = "bottomright",
+  y.legend = NULL,
+  fill = TRUE,
+  lty = 1,
+  lwd = 1
+)
 }
 \arguments{
 \item{funlist}{a list of functions which can be used to calculate the
@@ -75,6 +90,9 @@ curves are plotted.}
 
 \item{lwd}{line width}
 }
+\value{
+No return value
+}
 \description{
 Function \code{cmdensity} can be used to plot 2-dimensional 
   density curves for circular data with multiple classes. The density curves 
@@ -104,8 +122,9 @@ cmdensity(fs, prop)                   # using proportions for functions
 
 }
 \references{
-Xu, D. and Wang, Y. (2019) Area-proportional Visualization for 
-  Circular Data (submitted).
+Xu, D. and Wang, Y. (2020). Area-proportional Visualization for
+Circular Data. \emph{Journal of Computational and Graphical
+Statistics}, \bold{29}, 351-357.
 }
 \seealso{
 \code{\link{cdensity}}, \code{\link{cmhist}}
@@ -113,7 +132,4 @@ Xu, D. and Wang, Y. (2019) Area-proportional Visualization for
 \author{
 Danli Xu <dxu452@aucklanduni.ac.nz>, Yong Wang <yongwang@auckland.ac.nz>
 }
-\keyword{circular}
-\keyword{curve}
-\keyword{density}
-\keyword{stacked}
+\concept{stacked circular density curve}

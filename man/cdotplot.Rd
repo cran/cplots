@@ -4,10 +4,22 @@
 \alias{cdotplot}
 \title{Circular Stacked Dot Plot}
 \usage{
-cdotplot(x, nbins = 36, radius = 1, unit = NA, area.prop = TRUE,
-  total.area = 1, m = NA, col = "lightblue", border = "skyblue4",
-  xlim = NULL, ylim = NULL, main = NULL, x.legend = "bottomright",
-  y.legend = NULL)
+cdotplot(
+  x,
+  nbins = 36,
+  radius = 1,
+  unit = NA,
+  area.prop = TRUE,
+  total.area = 1,
+  m = NA,
+  col = "lightblue",
+  border = "skyblue4",
+  xlim = NULL,
+  ylim = NULL,
+  main = NULL,
+  x.legend = "bottomright",
+  y.legend = NULL
+)
 }
 \arguments{
 \item{x}{a circular data object that is fully defined by the user.}
@@ -51,17 +63,22 @@ ranges.}
 
 \item{y.legend}{y coordinate to plot the legend.}
 }
+\value{
+No return value
+}
 \description{
 Function \code{cdotplot} can be used to plot 2-dimensional 
   stacked dot plot for circular data.
 }
 \details{
-If the number of observations is relatively small, 
-the usual circular stacked dot plot can be used with \code{unit = 1}.
-If the dataset is large, the dots may become too dense to visualize or count.
-Setting \code{unit} to be any positive integer to allow each dot to represent more than one observation.
-If the number of observations in one bin is not a multiple of the specified unit, 
-a partial dot can be used to represent the remainder at the top of the bin.
+If the number of observations is relatively small, the
+  usual circular stacked dot plot can be used with \code{unit = 1}.
+  If the dataset is large, the dots may become too dense to
+  visualize or count.  Setting \code{unit} to be any positive
+  integer to allow each dot to represent more than one observation.
+  If the number of observations in one bin is not a multiple of the
+  specified unit, a partial dot can be used to represent the
+  remainder at the top of the bin.
 }
 \examples{
 # 30 observations from two von Mises distributions
@@ -77,8 +94,9 @@ cdotplot(y, nbins=76, unit = 10, area = FALSE) # height-proportional
 
 }
 \references{
-Xu, D. and Wang, Y. (2019) Area-proportional Visualization for 
-Circular Data (submitted).
+Xu, D. and Wang, Y. (2020). Area-proportional Visualization for
+Circular Data. \emph{Journal of Computational and Graphical
+Statistics}, \bold{29}, 351-357.
 }
 \seealso{
 \code{\link{cbarplot}}, \code{\link{cdensity}}, \code{\link{chist}}
@@ -86,7 +104,4 @@ Circular Data (submitted).
 \author{
 Danli Xu <dxu452@aucklanduni.ac.nz>, Yong Wang <yongwang@auckland.ac.nz>
 }
-\keyword{circular}
-\keyword{dot}
-\keyword{plot}
-\keyword{stacked}
+\concept{circular stacked dot plot}
